@@ -1,9 +1,0 @@
-$v-font-size: 12px;
-$v-unit-size: 26px;
-@import "../valo/valo.scss";
-@mixin colored {
-  @include valo;
-
-  // add your styles here
-}
-@include colored;

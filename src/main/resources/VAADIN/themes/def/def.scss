@@ -1,0 +1,26 @@
+$v-font-size: 28px;
+$v-unit-size: 40px;
+@import "../valo/valo.scss";
+@mixin colored {
+  @include valo;
+
+  .big-red-button {
+    width: 60vmin;
+    height: 60vmin;
+    border-radius: 40vmin;
+    margin-left: calc(50vw - 30vmin);
+    background: red;
+
+    &.pressed {
+      background: yellow;
+    }
+  }
+
+
+  .centered-label,.team-label, .state-label {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+@include colored;
